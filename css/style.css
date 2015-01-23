@@ -1,9 +1,17 @@
 * {
 	font-family:sans-serif;
+
 }
 
+body {
+	background-image: url("background-3.jpg");
+	background-attachment: fixed;
+}
+
+/* Navigation bar */
 a.name {
-	width: 33.9%;
+	width: 33.7%;
+	font-weight: bold;
 	text-transform: uppercase;
 	background-color: #ffffb2;
 	margin: 0px;
@@ -46,16 +54,16 @@ a.nav-link {
 	display: block;
 	color: #000000;
 	background-color: #f8a5c2;
-
-
 }
 
 a.nav-link:hover {
+	transition:1s;
 	background-color: #ff7ab6;
 	color: #ffffff;
 }
 
 a.name:hover {
+	transition:1s;
 	background-color: #FBF373;
 }
 
@@ -63,7 +71,22 @@ a.name:hover {
 	display: inline;
 }
 
-#about-text, #index-text, #contact-text, #projects-text {
+/* Index page */
+.index-container {
+	margin: 20px 20px 0 0;
+	width: 100%;
+}
+
+#my-image {
+	float: left;
+	padding: 10px;
+
+}
+
+#my-image img {
+	display: block;
+}
+
+#about-text, #index-text, #contact-text, #projects-text{
 	margin-top: 80px;
-	margin-left: 15px;
 }
