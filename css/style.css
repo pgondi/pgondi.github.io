@@ -7,10 +7,16 @@ body {
 	margin-left: 15%;
 	margin-right: 15%;
 	background-image: url("gplaypattern.png");
+	background-attachment: fixed;
 }
 
 a {
 	text-decoration: none;
+}
+
+h2 {
+	text-align: center;
+	vertical-align: center;
 }
 
 /* Navigation bar */
@@ -70,7 +76,7 @@ a.nav-link {
 a.nav-link:hover {
 	transition:1s;
 	background-color: #DE7281;
-	color: #FEEED1;
+	color: #FFFFFF;
 	border-top: 5px solid #82549C;
 }
 
@@ -84,23 +90,42 @@ a.name:hover {
 	display: inline;
 }
 
+/* All pages */
+
+#about-text, #index-text, #contact-text, #projects-text{
+	margin-top: 80px;
+	padding: 5px;
+	background-color:rgba(204, 204, 204, 0.4);
+}
+
 /* Index page */
 .index-container {
 	margin: 20px 20px 0 0;
 	width: 100%;
 }
 
-
 #my-image {
 	float: left;
 	padding: 10px;
-
 }
 
 #my-image img {
 	display: block;
 }
 
-#about-text, #index-text, #contact-text, #projects-text{
-	margin-top: 80px;
+/* Contact page */
+#contact-text {
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	background-color:transparent;
 }
+
+#email-box, #github-box, #linkedin-box {
+	display: inline-block;
+}
+
+#email-box:hover, #github-box:hover, #linkedin-box:hover {
+	transition:2s;
+}
+
